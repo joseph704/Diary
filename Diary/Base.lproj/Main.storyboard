@@ -184,6 +184,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RHI-g1-Zjl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B1S-Ac-Mdi">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -304,7 +305,7 @@
         <!--Diary Detail View Controller-->
         <scene sceneID="3w7-7n-0rb">
             <objects>
-                <viewController id="dNj-gj-lbx" customClass="DiaryDetailViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiaryDetailViewController" id="dNj-gj-lbx" customClass="DiaryDetailViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SnE-TB-wuN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -366,6 +367,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="수정"/>
+                                        <connections>
+                                            <action selector="tapEditButton:" destination="dNj-gj-lbx" eventType="touchUpInside" id="cwA-Jg-UEZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiU-4i-Bb1">
                                         <rect key="frame" x="80" y="0.0" width="30" height="30"/>
@@ -373,6 +377,9 @@
                                         <state key="normal" title="삭제">
                                             <color key="titleColor" red="0.93333333330000001" green="0.14901960780000001" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapDeleteButton:" destination="dNj-gj-lbx" eventType="touchUpInside" id="hKd-VN-mCt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -396,6 +403,11 @@
                             <constraint firstItem="y2a-Kw-7cj" firstAttribute="trailing" secondItem="aFr-Jp-gmn" secondAttribute="trailing" constant="24" id="zU9-dU-dGd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentsTextView" destination="7tC-OF-wRD" id="vxl-ZD-lF0"/>
+                        <outlet property="dateLabel" destination="HoY-Me-vv2" id="bP2-AX-vQa"/>
+                        <outlet property="titleLabel" destination="73Y-Gz-lB2" id="Rqb-ML-uZh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmk-NE-GvR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
