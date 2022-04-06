@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04816EC627FDC6640016A1E0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04816EC527FDC6640016A1E0 /* Utils.swift */; };
 		238AEB4D27FB09BC00FE7DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238AEB4C27FB09BC00FE7DCF /* AppDelegate.swift */; };
 		238AEB4F27FB09BC00FE7DCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238AEB4E27FB09BC00FE7DCF /* SceneDelegate.swift */; };
 		238AEB5127FB09BC00FE7DCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238AEB5027FB09BC00FE7DCF /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04816EC527FDC6640016A1E0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		238AEB4927FB09BC00FE7DCF /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		238AEB4C27FB09BC00FE7DCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		238AEB4E27FB09BC00FE7DCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04816EC727FDCBBA0016A1E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				238AEB6A27FB1CB700FE7DCF /* Diary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04816EC827FDCBEA0016A1E0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				04816EC527FDC6640016A1E0 /* Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		04816EC927FDD2FC0016A1E0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				238AEB6827FB112A00FE7DCF /* DiaryDetailViewController.swift */,
+				04816ECB27FDD3230016A1E0 /* Diary */,
+				04816ECA27FDD3120016A1E0 /* Star */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		04816ECA27FDD3120016A1E0 /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				238AEB6227FB0D6F00FE7DCF /* StarViewController.swift */,
+				238AEB6427FB0E7600FE7DCF /* StarCell.swift */,
+			);
+			path = Star;
+			sourceTree = "<group>";
+		};
+		04816ECB27FDD3230016A1E0 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				238AEB5027FB09BC00FE7DCF /* ViewController.swift */,
+				238AEB6027FB0D2A00FE7DCF /* DiaryCell.swift */,
+				238AEB6627FB10AB00FE7DCF /* WriteDiaryViewController.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
 		238AEB4027FB09BC00FE7DCF = {
 			isa = PBXGroup;
 			children = (
@@ -70,17 +117,13 @@
 			children = (
 				238AEB4C27FB09BC00FE7DCF /* AppDelegate.swift */,
 				238AEB4E27FB09BC00FE7DCF /* SceneDelegate.swift */,
-				238AEB5027FB09BC00FE7DCF /* ViewController.swift */,
+				04816EC727FDCBBA0016A1E0 /* Model */,
+				04816EC827FDCBEA0016A1E0 /* Utility */,
+				04816EC927FDD2FC0016A1E0 /* Presentation */,
 				238AEB5227FB09BC00FE7DCF /* Main.storyboard */,
 				238AEB5527FB09BE00FE7DCF /* Assets.xcassets */,
 				238AEB5727FB09BE00FE7DCF /* LaunchScreen.storyboard */,
 				238AEB5A27FB09BE00FE7DCF /* Info.plist */,
-				238AEB6027FB0D2A00FE7DCF /* DiaryCell.swift */,
-				238AEB6227FB0D6F00FE7DCF /* StarViewController.swift */,
-				238AEB6427FB0E7600FE7DCF /* StarCell.swift */,
-				238AEB6627FB10AB00FE7DCF /* WriteDiaryViewController.swift */,
-				238AEB6827FB112A00FE7DCF /* DiaryDetailViewController.swift */,
-				238AEB6A27FB1CB700FE7DCF /* Diary.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -161,6 +204,7 @@
 				238AEB6527FB0E7600FE7DCF /* StarCell.swift in Sources */,
 				238AEB4D27FB09BC00FE7DCF /* AppDelegate.swift in Sources */,
 				238AEB4F27FB09BC00FE7DCF /* SceneDelegate.swift in Sources */,
+				04816EC627FDC6640016A1E0 /* Utils.swift in Sources */,
 				238AEB6B27FB1CB700FE7DCF /* Diary.swift in Sources */,
 				238AEB6927FB112A00FE7DCF /* DiaryDetailViewController.swift in Sources */,
 				238AEB6127FB0D2A00FE7DCF /* DiaryCell.swift in Sources */,
